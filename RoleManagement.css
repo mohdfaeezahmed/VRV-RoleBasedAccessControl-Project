@@ -1,0 +1,122 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f8f9fa;
+  }
+  
+  .role-management {
+    max-width: 900px;
+    margin: 50px auto;
+    padding: 20px;
+    background: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .role-management h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333333;
+  }
+  
+  button {
+    cursor: pointer;
+    font-size: 14px;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 5px;
+    margin: 5px;
+    transition: all 0.2s ease-in-out;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button:active {
+    transform: scale(0.98);
+  }
+  
+  button:nth-child(1) {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  button:nth-child(2) {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  button:nth-child(1):hover {
+    background-color: #0056b3;
+  }
+  
+  button:nth-child(2):hover {
+    background-color: #218838;
+  }
+  
+  .role-management-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+  }
+  
+  .role-management-table thead {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .role-management-table th,
+  .role-management-table td {
+    padding: 10px;
+    text-align: left;
+    border: 1px solid #dddddd;
+  }
+  
+  .role-management-table th {
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  .role-management-table tbody tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .role-management-table tbody tr:hover {
+    background-color: #f1f8ff;
+  }
+  
+  .role-management-table button {
+    padding: 5px 10px;
+    font-size: 14px;
+  }
+  
+  .role-management-table button:nth-child(1) {
+    background-color: #28a745;
+    color: white;
+  }
+  
+  .role-management-table button:nth-child(1):hover {
+    background-color: #218838;
+  }
+  
+  .role-management-table button:nth-child(2) {
+    background-color: #dc3545;
+    color: white;
+  }
+  
+  .role-management-table button:nth-child(2):hover {
+    background-color: #c82333;
+  }
+  
+  input[type="text"] {
+    padding: 5px 8px;
+    font-size: 14px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+    width: 100%;
+    box-sizing: border-box;
+  }
+  

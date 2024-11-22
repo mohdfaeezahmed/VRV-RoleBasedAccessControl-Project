@@ -1,0 +1,193 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f4f8;
+    color: #333;
+  }
+  
+  h1 {
+    text-align: center;
+    color: #444;
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 600;
+  }
+
+  .back-button {
+    margin-top: 20px;
+    margin-bottom: -10px;
+  }
+  
+  table {
+    width: 90%;
+    margin: 40px auto;
+    border-collapse: collapse;
+    border-radius: 8px;
+    overflow: hidden;
+    background-color: #fff;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+  
+  .user-table th, td {
+    padding: 15px 20px;
+    text-align: left;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  
+  .user-table th {
+    background-color: #007BFF;
+    color: #fff;
+    text-transform: uppercase;
+  }
+  
+  .user-table td {
+    background-color: #f9fafb;
+    border-bottom: 1px solid #f1f3f5;
+  }
+  
+  td:last-child {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+  }
+  
+  button {
+    padding: 8px 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    display: inline-block;
+  }
+  
+  button:hover {
+    opacity: 0.9;
+  }
+  
+  button.edit-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.edit-btn:hover {
+    background-color: #45a049;
+  }
+  
+  button.delete-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.delete-btn:hover {
+    background-color: #e53935;
+  }
+  
+.ReactModal__Overlay {
+    background-color: rgba(0, 0, 0, 0.5); 
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .ReactModal__Content {
+    width: 400px;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    position: relative;
+  }
+  
+  .ReactModal__Content.ReactModal__Content--after-open {
+    transform: scale(1);
+  }
+  
+  .ReactModal__Content h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333;
+  }
+  
+  input {
+    width: 100%;
+    padding: 12px 15px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f9f9f9;
+    transition: border-color 0.3s ease, background-color 0.3s ease;
+  }
+  
+  input:focus {
+    border-color: #007BFF;
+    background-color: #f0f8ff;
+    outline: none;
+  }
+  
+  button.save-btn {
+    background-color: #4CAF50;
+    color: white;
+  }
+  
+  button.save-btn:hover {
+    background-color: #45a049;
+  }
+  
+  button.cancel-btn {
+    background-color: #f44336;
+    color: white;
+  }
+  
+  button.cancel-btn:hover {
+    background-color: #e53935;
+  }
+  
+  button.save-btn,
+  button.cancel-btn {
+    width: 100%;
+    padding: 12px 0;
+    border-radius: 6px;
+    margin-top: 15px;
+    font-weight: bold;
+    font-size: 16px;
+  }
+  
+  button.save-btn:disabled,
+  button.cancel-btn:disabled {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  
+  @media (max-width: 768px) {
+    table {
+      width: 100%;
+    }
+  
+    h1 {
+      font-size: 28px;
+    }
+  
+    .ReactModal__Content {
+      width: 90%;
+    }
+  
+    button {
+      font-size: 12px;
+      padding: 6px 12px;
+    }
+  }
+  
